@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using VR_Utilities;
 
 public class CharacterSelector : MonoBehaviour
 {
@@ -17,6 +18,6 @@ public class CharacterSelector : MonoBehaviour
 
     private void OnStartButtonClicked()
     {
-        SceneManager.LoadScene(nextSceneName);
+        ScreenFader.Instance.FadeToOpaqueAndLoadNewScene();
     }
 }
