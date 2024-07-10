@@ -1808,6 +1808,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "7e642d0f-0ba3-44ef-a3f6-a568697d63c9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -2193,6 +2202,165 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "56b492cd-f208-4b82-a8e2-c5855c5967f6",
+                    "path": "<XRController>/{Menu}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Custom",
+            "id": "d82cc3ba-17e8-412f-a179-80c1f5353fe6",
+            "actions": [
+                {
+                    "name": "LongPrimaryButtonPress",
+                    "type": "Button",
+                    "id": "6c3b292c-b202-44bb-9646-7294f0d278ef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=3)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LongSecondaryButtonPress",
+                    "type": "Button",
+                    "id": "3466d61f-0782-471d-9ef8-2132cf5889c2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=4)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LongMenuButtonPress",
+                    "type": "Button",
+                    "id": "8143e880-c8f5-49d4-9bdd-d61b59344583",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=4)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MenuButtonPress",
+                    "type": "Button",
+                    "id": "b686eb86-2657-430f-9f80-6781f1957848",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LongThumbstickPress",
+                    "type": "Button",
+                    "id": "114b947c-2c4a-48f3-9409-455824109c68",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=3)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Easy Left Teleport Mode Activate",
+                    "type": "Value",
+                    "id": "ffee381d-2f40-43c3-86a2-52ea71ecbb15",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Easy Right Teleport Mode Activate",
+                    "type": "Value",
+                    "id": "e09ba7c1-3121-4682-9bd1-b292392177c8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ce96cc90-a90c-490b-8afa-e5139c62a29f",
+                    "path": "*/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "LongPrimaryButtonPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cd7f4139-b8c0-4116-b57e-081a22ca3450",
+                    "path": "*/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "LongSecondaryButtonPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "06d46e7a-f30e-4d80-9661-c99ed0ead48e",
+                    "path": "<OculusTouchController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "LongThumbstickPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a81a9eeb-11d8-42b7-b1db-aa67194e893a",
+                    "path": "<XRController>{LeftHand}/{Primary2DAxis}",
+                    "interactions": "Sector(directions=-1)",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Easy Left Teleport Mode Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7bd144d8-8a71-40a2-aae4-16ebd8ad5d92",
+                    "path": "<XRController>{RightHand}/{Primary2DAxis}",
+                    "interactions": "Sector(directions=-1)",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Easy Right Teleport Mode Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "31a71b5a-cd83-4154-9e6d-790008f81c7c",
+                    "path": "<OculusTouchController>/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "LongMenuButtonPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "12d932c7-1521-4156-93ea-5cdf8beb3d30",
+                    "path": "<OculusTouchController>/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "MenuButtonPress",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
