@@ -46,7 +46,7 @@ namespace VRMenu
 
         private void OnStartButtonClicked()
         {
-            ScreenFader.Instance.FadeToOpaqueAndLoadNewScene();
+            ScreenFader.Instance.FadeToOpaqueAndLoadNewScene(nextSceneName);
         }
 
         void OnCharacterSelected(CharacterSelectable characterSelectable)

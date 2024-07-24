@@ -881,6 +881,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4077839605971035795, guid: 7354586859f1e9843850979ffa0e71b1, type: 3}
+      propertyPath: nextSceneName
+      value: TentScene
+      objectReference: {fileID: 0}
     - target: {fileID: 4319237506282700938, guid: 7354586859f1e9843850979ffa0e71b1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

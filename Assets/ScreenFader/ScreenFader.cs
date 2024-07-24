@@ -11,7 +11,6 @@ namespace VR_Utilities
     {
         public float fadeTime = 1.0f;
         public Renderer fadeRenderer;
-        public string newSceneName;
 
         public static ScreenFader Instance;
 
@@ -37,7 +36,7 @@ namespace VR_Utilities
             StartCoroutine(TransitionFromOpaqueToTransparent());
         }
 
-        public void FadeToOpaqueAndLoadNewScene()
+        public void FadeToOpaqueAndLoadNewScene(string newSceneName)
         {
             StartCoroutine(WaitForFadeBeforeLoadingNewScene(newSceneName));
         }
