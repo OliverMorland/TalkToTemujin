@@ -55,6 +55,7 @@ namespace VRMenu
             selectedCharacter = characterSelectable;
             characterSelectable.Highlight();
             confirmButton.interactable = true;
+            nextSceneName = characterSelectable.characterName;
         }
 
         void UnhighlightAllSelectables()
