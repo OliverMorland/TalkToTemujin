@@ -34,7 +34,8 @@ public class OVRLipSyncContextMorphTargetEditor : Editor
   SerializedProperty laughterThreshold;
   SerializedProperty laughterMultiplier;
   SerializedProperty smoothAmounth;
-  private static string[] visemeNames = new string[] {
+  SerializedProperty sensitivity;
+    private static string[] visemeNames = new string[] {
     "sil", "PP", "FF", "TH",
     "DD", "kk", "CH", "SS",
     "nn", "RR", "aa", "E",
@@ -49,6 +50,7 @@ public class OVRLipSyncContextMorphTargetEditor : Editor
     laughterThreshold = serializedObject.FindProperty("laughterThreshold");
     laughterMultiplier = serializedObject.FindProperty("laughterMultiplier");
     smoothAmounth = serializedObject.FindProperty("smoothAmount");
+        sensitivity = serializedObject.FindProperty("sensitivity");
   }
 
   private void BlendNameProperty(SerializedProperty prop, string name, string[] blendNames = null)
@@ -120,6 +122,7 @@ public class OVRLipSyncContextMorphTargetEditor : Editor
     EditorGUILayout.PropertyField(laughterThreshold);
     EditorGUILayout.PropertyField(laughterMultiplier);
     EditorGUILayout.PropertyField(smoothAmounth);
+    EditorGUILayout.PropertyField(sensitivity);
     serializedObject.ApplyModifiedProperties();
   }
 }

@@ -26,7 +26,6 @@ using System.Linq;
 public class OVRLipSyncContextMorphTarget : MonoBehaviour
 {
     // PUBLIC
-    public float sensitivity = 1.0f;
 
     // Manually assign the skinned mesh renderer to this script
     [Tooltip("Skinned Mesh Rendered target to be driven by Oculus Lipsync")]
@@ -78,6 +77,10 @@ public class OVRLipSyncContextMorphTarget : MonoBehaviour
     [Range(1, 100)]
     [Tooltip("Smoothing of 1 will yield only the current predicted viseme, 100 will yield an extremely smooth viseme response.")]
     public int smoothAmount = 70;
+
+    [Range(1, 100)]
+    [Tooltip("Effect on morph targets")]
+    public float sensitivity = 1.0f;
 
     // PRIVATE
 
