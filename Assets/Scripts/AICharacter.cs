@@ -26,6 +26,7 @@ public class AICharacter : MonoBehaviour
     public TMP_Text npcStatusLabel;
     [Range(0, 1f)] public float rotationFactor = 0.5f;
     bool isTurningToFaceUser = false;
+    public bool canTurnToFaceUser = true;
     public enum NPCState { None, IsListening, IsThinking, IsTalking};
     public NPCState currentNPCState = NPCState.None;
     public Animator animator;
@@ -84,7 +85,7 @@ public class AICharacter : MonoBehaviour
     void Update()
     {
         WaitForUserToApproachToStartListening();
-        if (isTurningToFaceUser)
+        if (canTurnToFaceUser && isTurningToFaceUser)
         {
             TurnToFaceUser();
         }
